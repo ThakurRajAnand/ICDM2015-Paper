@@ -12,20 +12,31 @@ knit        : slidify::knit2slides
 
 ---
 
-##            OUTLINE
+## OUTLINE
 
-1. Objective and Evaluation
-2. Data
-3. Feature Engineering
-4. Models
-5. Ensembling Approach
-6. Conclusion
-7. References
+1. Introduction
+2. Objective and Evaluation
+3. Data
+4. Feature Engineering
+5. Models
+6. Ensembling Approach
+7. Conclusion
+8. References
 
---- .class #id 
+---
 
-## Slide 2
+## Introduction - Competition
+
+<iframe src='./assets/img/icdm_competition.png' width=10px height=10px> 
+</iframe>
+
+---
 
 
+## Introduction - Leaderboard
 
+<iframe src='./assets/img/leaderboard.png' width=10px height=10px>
+</iframe>
+
+--- 
 

@@ -23,20 +23,17 @@ knit        : slidify::knit2slides
 7. Conclusion
 8. References
 
----
+--- .class #id 
 
-## Introduction - Competition
+## Introduction - 1
 
-<iframe src='./assets/img/icdm_competition.png' width=10px height=10px> 
-</iframe>
-
----
+<iframe src='../ICDM2015/assets/img/icdm_competition.png' width=10px height=10px>
 
 
-## Introduction - Leaderboard
+--- .centrepre .bigger
 
-<iframe src='./assets/img/leaderboard.png' width=10px height=10px>
-</iframe>
+## Introduction - 2
+<iframe src='../ICDM/version1/ICDM2015/assets/img/assets/img/leaderboard.png' width=10px height=10px>
 
---- 
+
 
