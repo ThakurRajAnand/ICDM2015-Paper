@@ -32,7 +32,6 @@ knit        : slidify::knit2slides
 
 ---
 
-
 ## Introduction - Leaderboard
 
 <iframe src='./assets/img/leaderboard.png' width=10px height=10px>
@@ -40,3 +39,9 @@ knit        : slidify::knit2slides
 
 --- 
 
+## Introduction - Drawbridge
+Drawbridge is a leading cross-device identity company. They aggregate the data from following data sources
+
+<iframe src='./assets/img/drawbridge.png' width=10px height=10px>
+</iframe>
+--
