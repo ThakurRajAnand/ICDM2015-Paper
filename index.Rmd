@@ -40,8 +40,21 @@ knit        : slidify::knit2slides
 --- 
 
 ## Introduction - Drawbridge
-Drawbridge is a leading cross-device identity company. They aggregate the data from following data sources
+Drawbridge is a leading cross-device identity company. They aggregate the data from personal computing devices, mobile devices, and emerging devices to reach more than one billion consumers across more than three billion devices.
 
 <iframe src='./assets/img/drawbridge.png' width=10px height=10px>
 </iframe>
---
+
+---
+
+## Objective and Evaluation
+Objective of the competition was to do device-cookie pairs mapping. Evaluation function was \\(F_{0.5}\\) score
+
+$$
+(1 + \beta^2) \frac{pr}{\beta^2 p+r}\ \ \mathrm{where}\ \ p = \frac{tp}{tp+fp},\ \ r = \frac{tp}{tp+fn},\ \beta = 0.5.
+$$
+
+<b>Precision</b> measures the number of correctly predicted positive results as a proportion of the total predicted positive results.
+
+<b>Recall</b> measures the number of true correctly predicted positive results as a proportion of that actual positive results. 
+
