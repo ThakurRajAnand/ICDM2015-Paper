@@ -20,6 +20,7 @@ knit        : slidify::knit2slides
 4. Models
 5. Ensembling Approach
 6. Conclusion
+7. References
 
 --- .class #id 
 
