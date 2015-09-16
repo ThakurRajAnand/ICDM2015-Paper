@@ -58,3 +58,12 @@ $$
 
 <b>Recall</b> measures the number of true correctly predicted positive results as a proportion of that actual positive results. 
 
+---
+
+## Data
+4 main data tables were provided by Drawbridge
+
+1. <B>Device</B> features like ID , Country , OS etc. <font color="red">[6 Anonymous features]</font>
+2. <B>Cookie</B> features like ID , Browser Version , Country etc. <font color="red">[6 Anonymous features]</font>
+3. <B>IP</B> features for <B>Device/Cookie</B> like Freq count etc. <font color="red">[5 Anonymous count features]</font>
+4. <B>Property</B> features for <B>IP</B> like Total Freq etc. <font color="red">[3 Anonymous features]</font>
