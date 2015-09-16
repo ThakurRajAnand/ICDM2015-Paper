@@ -3,7 +3,7 @@ title       : ICDM 2015 - Drawbridge Cross - Device Connection Challenge
 subtitle    : Machine learning approach to identify users across their digital devices
 author      : Thakur Raj Anand , Oleksii Renov
 job         : Kagglers
-framework   : deck.js        # {io2012, html5slides, shower, dzslides, ...}
+framework   : io2012 # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
