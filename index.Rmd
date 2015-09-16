@@ -12,7 +12,7 @@ knit        : slidify::knit2slides
 
 ---
 
-## Read-And-Delete
+##            OUTLINE
 
 1. Edit YAML front matter
 2. Write using R Markdown
