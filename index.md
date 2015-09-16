@@ -14,9 +14,12 @@ knit        : slidify::knit2slides
 
 ##            OUTLINE
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
+1. Objective and Evaluation
+2. Data
+3. Feature Engineering
+4. Models
+5. Ensembling Approach
+6. Conclusion
 
 --- .class #id 
 
