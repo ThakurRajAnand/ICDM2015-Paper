@@ -76,7 +76,7 @@ $$
 ---
 
 ## Methodolgy : Unsupervised to Semi-Supervised
-Handling this problem as Unsupervised learning was not a feasible due to too many Device-Cookie pairs possible (~2.18 million Cookies). We converted the problem to Semi-Supervised learning as follows.
+Handling this problem as Unsupervised learning was not feasible due to too many Device-Cookie pairs possible (~2.18 million Cookies). We converted the problem to Semi-Supervised learning as follows.
 
 1. Train and test data were created for those Device-Cookie pairs which had at least 1 IP common
 
