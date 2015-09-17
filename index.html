@@ -182,11 +182,11 @@
 
 <slide class="" id="slide-9" style="background:;">
   <hgroup>
-    <h2>Feature Engineering : Naive Similarity</h2>
+    <h2>Feature Engineering : Naive Similarity Statistics</h2>
   </hgroup>
   <article data-timings="">
     <div style='width:800; overflow:auto; border-width: 2'><!-- html table generated in R 3.1.0 by xtable 1.7-4 package -->
-<!-- Thu Sep 17 07:49:28 2015 -->
+<!-- Thu Sep 17 07:48:40 2015 -->
 <table border=1>
 <tr> <th> Feature.Name </th> <th> Num.of.Matched.Pairs </th> <th> Num.Of.Unique.Matched.Pairs </th> <th> Filtering.in.Percentage </th> <th> Percentage.of.Unique.Matched.Pairs.Saved </th>  </tr>
   <tr> <td> N/A </td> <td>        251869 </td> <td>        176709 </td> <td>        100% </td> <td>        98.12% </td> </tr>
@@ -211,17 +211,24 @@
 
 <slide class="" id="slide-10" style="background:;">
   <hgroup>
-    <h2>Models</h2>
+    <h2>Feature Engineering : Latent Features Statistics</h2>
   </hgroup>
   <article data-timings="">
-    
+    <p>1.<B>LogCount1</B> - Number of unique <B>IPs</B> on which specific combination of (device, cookie) occurs</p>
+
+<p>2.<B>LogCount2</B> - Number of unique cookies on which specific combination of (device, IP) occurs</p>
+
+<p>3.<B>LogCount3</B> - Number of unique devices on which specific combination of (cookie, IP) occurs</p>
+
+<p>4.<B>Latent1</B> - Binary feature which was used to filter number of possible cookies for each device. We computed the sum of all IP frequencies of device grouped by device and cookie. If this specific sum is greater than or equal to the median of all sums by device, then Latent1 is set to 1 else it is set to 0.</p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-11" style="background:;">
   <hgroup>
-    <h2>Ensembling Approach</h2>
+    <h2>Models</h2>
   </hgroup>
   <article data-timings="">
     
@@ -231,7 +238,7 @@
 
 <slide class="" id="slide-12" style="background:;">
   <hgroup>
-    <h2>Conclusion</h2>
+    <h2>Ensembling Approach</h2>
   </hgroup>
   <article data-timings="">
     
@@ -240,6 +247,16 @@
 </slide>
 
 <slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>Conclusion</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
   <hgroup>
     <h2>References</h2>
   </hgroup>
@@ -314,32 +331,38 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=9 title='Feature Engineering : Naive Similarity'>
+        data-slide=9 title='Feature Engineering : Naive Similarity Statistics'>
          9
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=10 title='Models'>
+        data-slide=10 title='Feature Engineering : Latent Features Statistics'>
          10
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=11 title='Ensembling Approach'>
+        data-slide=11 title='Models'>
          11
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=12 title='Conclusion'>
+        data-slide=12 title='Ensembling Approach'>
          12
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=13 title='References'>
+        data-slide=13 title='Conclusion'>
          13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='References'>
+         14
       </a>
     </li>
   </ul>

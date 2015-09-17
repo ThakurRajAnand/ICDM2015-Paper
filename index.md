@@ -95,10 +95,10 @@ Using Exploratory Data Analysis, we found device-cookie pairs follow poisson dis
 
 ---
 
-## Feature Engineering : Naive Similarity 
+## Feature Engineering : Naive Similarity Statistics
 
 <div style='width:800; overflow:auto; border-width: 2'><!-- html table generated in R 3.1.0 by xtable 1.7-4 package -->
-<!-- Thu Sep 17 07:49:28 2015 -->
+<!-- Thu Sep 17 07:48:40 2015 -->
 <table border=1>
 <tr> <th> Feature.Name </th> <th> Num.of.Matched.Pairs </th> <th> Num.Of.Unique.Matched.Pairs </th> <th> Filtering.in.Percentage </th> <th> Percentage.of.Unique.Matched.Pairs.Saved </th>  </tr>
   <tr> <td> N/A </td> <td>        251869 </td> <td>        176709 </td> <td>        100% </td> <td>        98.12% </td> </tr>
@@ -118,6 +118,19 @@ Using Exploratory Data Analysis, we found device-cookie pairs follow poisson dis
 </div>
 
 ---
+
+## Feature Engineering : Latent Features Statistics
+
+1.<B>LogCount1</B> - Number of unique <B>IPs</B> on which specific combination of (device, cookie) occurs
+
+2.<B>LogCount2</B> - Number of unique cookies on which specific combination of (device, IP) occurs
+
+3.<B>LogCount3</B> - Number of unique devices on which specific combination of (cookie, IP) occurs
+
+4.<B>Latent1</B> - Binary feature which was used to filter number of possible cookies for each device. We computed the sum of all IP frequencies of device grouped by device and cookie. If this specific sum is greater than or equal to the median of all sums by device, then Latent1 is set to 1 else it is set to 0.
+
+
+--- 
 
 ## Models
 
