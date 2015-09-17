@@ -95,7 +95,7 @@ Using Exploratory Data Analysis, we found device-cookie pairs follow poisson dis
 
 ---
 
-## Feature Engineering : Naive Similarity Statistics
+## Feature Engineering : Naive Similarity Summary
 
 <div style='width:800; overflow:auto; border-width: 2'><!-- html table generated in R 3.1.0 by xtable 1.7-4 package -->
 <!-- Thu Sep 17 07:48:40 2015 -->
@@ -119,7 +119,7 @@ Using Exploratory Data Analysis, we found device-cookie pairs follow poisson dis
 
 ---
 
-## Feature Engineering : Latent Features Statistics
+## Feature Engineering : Latent Features
 
 1. <B>LogCount1</B> - Number of unique IPs on which specific combination of (device, cookie) occurs
 
