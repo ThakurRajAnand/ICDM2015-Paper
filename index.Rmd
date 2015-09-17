@@ -137,9 +137,9 @@ We used following 2 models:
 
 1. <b>FTRL</b> : FTRL is a online version of regularized logistic regression and gives lot of flexibility to run the models on big data sets quickly 
 
-2. <b>XGBOOST</b> : XGBOOST is a library developed by DMLC and currently considered as the most powerful Gradient Boosting library (Linear & Tree)
+2. <b>XGBOOST</b> : XGBOOST is a library developed by DMLC and currently considered as the most powerful gradient boosting library (Linear & Tree)
 
-We primarily used FTRL to test new features and take LB feedback to decide if feature is adding value or not.
+We primarily used FTRL to test new features. We took leaderboard feedback to decide if a feature added value to the model or not.
 
 ---
 
