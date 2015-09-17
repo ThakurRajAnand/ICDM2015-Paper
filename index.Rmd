@@ -120,13 +120,13 @@ head.table(X)
 
 ## Feature Engineering : Latent Features Statistics
 
-1.<B>LogCount1</B> - Number of unique IPs on which specific combination of (device, cookie) occurs
+1. <B>LogCount1</B> - Number of unique IPs on which specific combination of (device, cookie) occurs
 
-2.<B>LogCount2</B> - Number of unique cookies on which specific combination of (device, IP) occurs
+2. <B>LogCount2</B> - Number of unique cookies on which specific combination of (device, IP) occurs
 
-3.<B>LogCount3</B> - Number of unique devices on which specific combination of (cookie, IP) occurs
+3. <B>LogCount3</B> - Number of unique devices on which specific combination of (cookie, IP) occurs
 
-4.<B>Latent1</B> - Binary feature which was used to filter number of possible cookies for each device. We computed the sum of all IP frequencies of device grouped by device and cookie. If this specific sum is greater than or equal to the median of all sums by device, then Latent1 is set to 1 else it is set to 0.
+4. <B>Latent1</B> - Binary feature which was used to filter number of possible cookies for each device. We computed the sum of all IP frequencies of device grouped by device and cookie. If this specific sum is greater than or equal to the median of all sums by device, then Latent1 is set to 1 else it is set to 0.
 
 
 --- 

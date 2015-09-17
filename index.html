@@ -214,13 +214,12 @@
     <h2>Feature Engineering : Latent Features Statistics</h2>
   </hgroup>
   <article data-timings="">
-    <p>1.<B>LogCount1</B> - Number of unique IPs on which specific combination of (device, cookie) occurs</p>
-
-<p>2.<B>LogCount2</B> - Number of unique cookies on which specific combination of (device, IP) occurs</p>
-
-<p>3.<B>LogCount3</B> - Number of unique devices on which specific combination of (cookie, IP) occurs</p>
-
-<p>4.<B>Latent1</B> - Binary feature which was used to filter number of possible cookies for each device. We computed the sum of all IP frequencies of device grouped by device and cookie. If this specific sum is greater than or equal to the median of all sums by device, then Latent1 is set to 1 else it is set to 0.</p>
+    <ol>
+<li><p><B>LogCount1</B> - Number of unique IPs on which specific combination of (device, cookie) occurs</p></li>
+<li><p><B>LogCount2</B> - Number of unique cookies on which specific combination of (device, IP) occurs</p></li>
+<li><p><B>LogCount3</B> - Number of unique devices on which specific combination of (cookie, IP) occurs</p></li>
+<li><p><B>Latent1</B> - Binary feature which was used to filter number of possible cookies for each device. We computed the sum of all IP frequencies of device grouped by device and cookie. If this specific sum is greater than or equal to the median of all sums by device, then Latent1 is set to 1 else it is set to 0.</p></li>
+</ol>
 
   </article>
   <!-- Presenter Notes -->
