@@ -76,13 +76,13 @@ $$
 ---
 
 ## Methodolgy : Unsupervised to Semi-Supervised
-Handling this problem as Unsupervised learning was not feasible due to too many Device-Cookie pairs possible (~2.18 million Cookies). We converted the problem to Semi-Supervised learning as follows.
+Handling this problem as an unsupervised learning problem was not feasible as there were many device-cookie pairs possible (~2.18 million cookies). We converted the problem to a semi- supervised learning problem using the following methodology:
 
-1. Train and test data were created for those Device-Cookie pairs which had at least 1 IP common
+1. Train and test data was created for device-cookie with atleast one common IP
 
 2. We were able to retreive 98.3% of known Drawbridge Handles (180K) for train data set
 
-3. We used Device-Cookie with known Drawbridge Handle as postive example and unknown as negative example
+3. We used device-cookie pairs with a known Drawbridge handle as a positive example, and one with unknown Drawbridge handle as a negative example
 
 4. Directly optimizing F-score was tough when handling this problem as binary classification. We optimized AUC throughout the competition which was eventually not that helpful.
 
