@@ -42,7 +42,7 @@ knit        : slidify::knit2slides
 --- 
 
 ## Introduction : Drawbridge
-Drawbridge is a leading cross-device identity company. They aggregate the data from personal computing devices, mobile devices, and emerging devices to reach more than one billion consumers across more than three billion devices.
+Drawbridge is a leading cross-device identity company. They aggregate data from personal computing devices, mobile devices and emerging devices to reach more than one billion consumers across three billion devices.
 
 <iframe src='./assets/img/drawbridge.png' width=10px height=10px>
 </iframe>
