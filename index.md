@@ -95,9 +95,9 @@ Using Exploratory Data Analysis, we found device-cookie pairs follow poisson dis
 
 ---
 
-## Feature Engineering
+## Feature Engineering : Naive Similarity 
 <div style='width:800; overflow:auto; border-width: 2'><!-- html table generated in R 3.1.0 by xtable 1.7-4 package -->
-<!-- Thu Sep 17 07:42:57 2015 -->
+<!-- Thu Sep 17 07:48:40 2015 -->
 <table border=1>
 <tr> <th> Feature.Name </th> <th> Num.of.Matched.Pairs </th> <th> Num.Of.Unique.Matched.Pairs </th> <th> Filtering.in.Percentage </th> <th> Percentage.of.Unique.Matched.Pairs.Saved </th>  </tr>
   <tr> <td> N/A </td> <td>        251869 </td> <td>        176709 </td> <td>        100% </td> <td>        98.12% </td> </tr>
