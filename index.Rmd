@@ -7,6 +7,7 @@ framework   : io2012 # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
+ext_widgets : {rCharts: [libraries/nvd3]}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 
@@ -74,12 +75,32 @@ $$
 
 ---
 
-## Methodolgy
-Something
+## Methodolgy - Unsupervised to Semi-Supervised
+Handling this problem as unsupervised learning was not a feasible due to too many Device-Cookie pairs possible (~2.18 million Cookies). We converted the problem to Semi-Supervised learning as follows.
+
+1. Train and test data were created for those Device-Cookie pairs which had at least 1 IP common
+
+2. We were able to retreive 98.3% of known Drawbridge Handles (180K) for train data set
+
+3. We used Device-Cookie with known Drawbridge Handle as postive example and unknown as negative example
+
+4. Directly optimizing F-score was tough when handling this problem as binary classification. We optimized AUC throughout the competition which was eventually not that helpful.
+
+
+
+
 
 ---
 
 ## Feature Engineering
+'''{r echo = F, results = 'asis'}
+require(rCharts)
+haireye = as.data.frame(HairEyeColor)
+n1 <- nPlot(Freq ~ Hair, group = 'Eye', type = 'multiBarChart',
+  data = subset(haireye, Sex == 'Male')
+)
+n1$print('chart1')
+'''
 
 ---
 
