@@ -121,7 +121,7 @@ Using Exploratory Data Analysis, we found device-cookie pairs follow poisson dis
 
 ## Feature Engineering : Latent Features Statistics
 
-1.<B>LogCount1</B> - Number of unique <B>IPs</B> on which specific combination of (device, cookie) occurs
+1.<B>LogCount1</B> - Number of unique IPs on which specific combination of (device, cookie) occurs
 
 2.<B>LogCount2</B> - Number of unique cookies on which specific combination of (device, IP) occurs
 
