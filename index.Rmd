@@ -76,7 +76,7 @@ $$
 ---
 
 ## Methodolgy : Unsupervised to Semi-Supervised
-Handling this problem as unsupervised learning was not a feasible due to too many Device-Cookie pairs possible (~2.18 million Cookies). We converted the problem to Semi-Supervised learning as follows.
+Handling this problem as Unsupervised learning was not a feasible due to too many Device-Cookie pairs possible (~2.18 million Cookies). We converted the problem to Semi-Supervised learning as follows.
 
 1. Train and test data were created for those Device-Cookie pairs which had at least 1 IP common
 
@@ -88,7 +88,7 @@ Handling this problem as unsupervised learning was not a feasible due to too man
 
 ---
 
-## Methodology : Device-Cookie pair follows Poisson distribution
+## Methodology : Device - Cookie pair follows Poisson distribution
 Using Exploratory Data Analysis, we found device-cookie pairs follow poisson distribution with $\lambda$ = 0.2613504 and 95% confidence interval (0.2586986, 0.2640023)
 <iframe src='./assets/img/poisson.jpeg' width=10px height=10px>
 </iframe>
