@@ -50,7 +50,7 @@ Drawbridge is a leading cross-device identity company. They aggregate data from 
 ---
 
 ## Objective and Evaluation
-Objective of the competition was to do device-cookie pairs mapping. Evaluation function was <B>\\(F_{0.5}\\)</B> score
+Objective of the competition was to map device-cookie pairs. Evaluation function was <B>\\(F_{0.5}\\)</B> score
 
 
 $$
