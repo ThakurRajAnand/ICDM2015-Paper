@@ -96,7 +96,25 @@ Using Exploratory Data Analysis, we found device-cookie pairs follow poisson dis
 ---
 
 ## Feature Engineering
-
+<div style='width:400; overflow:auto; border-width: 1'><!-- html table generated in R 3.1.0 by xtable 1.7-4 package -->
+<!-- Thu Sep 17 07:13:59 2015 -->
+<table border=1>
+<tr> <th>  </th> <th> Feature.Name </th> <th> Num.of.Matched.Pairs </th> <th> Num.Of.Unique.Matched.Pairs </th> <th> Filtering..in.Percentage </th> <th> Percentage.of.Unique.Matched.Pairs.Saved </th>  </tr>
+  <tr> <td align="right"> 1 </td> <td> N/A </td> <td align="right"> 251869.00 </td> <td align="right"> 176709.00 </td> <td> 100% </td> <td> 98.12% </td> </tr>
+  <tr> <td align="right"> 2 </td> <td> same c0 </td> <td align="right"> 106504.00 </td> <td align="right"> 74550.00 </td> <td> 36.40% </td> <td> 41.39% </td> </tr>
+  <tr> <td align="right"> 3 </td> <td> same c1 </td> <td align="right"> 59139.00 </td> <td align="right"> 40728.00 </td> <td> 09.87% </td> <td> 22.61% </td> </tr>
+  <tr> <td align="right"> 4 </td> <td> same c2 </td> <td align="right"> 91395.00 </td> <td align="right"> 60935.00 </td> <td> 15.08% </td> <td> 33.83% </td> </tr>
+  <tr> <td align="right"> 5 </td> <td> same 5 </td> <td align="right"> 7440.00 </td> <td align="right"> 5226.00 </td> <td> 04.23% </td> <td> 02.90% </td> </tr>
+  <tr> <td align="right"> 6 </td> <td> same 6 </td> <td align="right"> 64212.00 </td> <td align="right"> 40514.00 </td> <td> 25.74% </td> <td> 22.49% </td> </tr>
+  <tr> <td align="right"> 7 </td> <td> same 7 </td> <td align="right"> 45707.00 </td> <td align="right"> 23996.00 </td> <td> 36.96% </td> <td> 13.32% </td> </tr>
+  <tr> <td align="right"> 8 </td> <td> idix same c1 </td> <td align="right"> 51637.00 </td> <td align="right"> 26545.00 </td> <td> 48.90% </td> <td> 14.74% </td> </tr>
+  <tr> <td align="right"> 9 </td> <td> idix same c2 </td> <td align="right"> 12810.00 </td> <td align="right"> 5972.00 </td> <td> 12.75% </td> <td> 03.31% </td> </tr>
+  <tr> <td align="right"> 10 </td> <td> idix same c3 </td> <td align="right"> 36466.00 </td> <td align="right"> 16290.00 </td> <td> 61.45% </td> <td> 09.04% </td> </tr>
+  <tr> <td align="right"> 11 </td> <td> idix same c4 </td> <td align="right"> 70391.00 </td> <td align="right"> 37991.00 </td> <td> 50.65% </td> <td> 21.09% </td> </tr>
+  <tr> <td align="right"> 12 </td> <td> idix same c5 </td> <td align="right"> 39550.00 </td> <td align="right"> 18820.00 </td> <td> 46.49% </td> <td> 10.45% </td> </tr>
+  <tr> <td align="right"> 13 </td> <td> same country </td> <td align="right"> 240512.00 </td> <td align="right"> 169072.00 </td> <td> 81.93% </td> <td> 93.88% </td> </tr>
+   </table>
+</div>
 
 ---
 

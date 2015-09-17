@@ -97,8 +97,20 @@ Using Exploratory Data Analysis, we found device-cookie pairs follow poisson dis
 
 ## Feature Engineering
 ```{r echo = F, results = 'asis',message=F, warning=F}
-require(rCharts)
 require(xtable)
+head.table <- function(table) {
+  html <- print(xtable(table), type="html", print.results=FALSE)
+  cat(paste0("<div style='width:400; overflow:auto; border-width: 1'>", html, "</div>"))
+}
+
+X = data.frame(
+"Feature Name" = c("N/A" , "same c0", "same c1", "same c2", "same 5", "same 6","same 7", "idix same c1", "idix same c2", "idix same c3", "idix same c4", "idix same c5","same country"),
+
+"Num of Matched Pairs" = c(251869,106504,59139,91395,7440,64212,45707,51637,12810,36466,70391,39550,240512),
+"Num Of Unique Matched Pairs" = c(176709,74550,40728,60935,5226,40514,23996,26545,5972,16290,37991,18820,169072),
+"Filtering  in Percentage" = c("100%","36.40%","09.87%","15.08%","04.23%","25.74%","36.96%","48.90%","12.75%","61.45%","50.65%","46.49%","81.93%"),
+"Percentage of Unique Matched Pairs Saved" =  c("98.12%","41.39%","22.61%","33.83%","02.90%","22.49%","13.32%","14.74%","03.31%","09.04%","21.09%","10.45%","93.88%"))
+head.table(X)
 ```
 
 ---
