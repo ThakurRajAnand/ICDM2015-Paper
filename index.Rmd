@@ -161,7 +161,7 @@ head.table(X)
 ---
 
 ## Ensembling Approach
-We wrote a heuristic to ensemble different XGBOOST models to make cookie - device pair distribution as close as possible to Poission with $\lambda$ <= 0.26.
+We wrote a heuristic to ensemble different XGBOOST models to make cookie - device pair distribution as close as possible to Poission with $\lambda$ <= 0.26. Results below shows that if our predicted distribution goes beyond $\lambda$ <= 0.26 then results drops dramatically.
 
 ```{r echo = F, results = 'asis',message=F, warning=F}
 require(xtable)
@@ -169,7 +169,7 @@ head.table <- function(table) {
   html <- print(xtable(table), type="html", print.results=FALSE,include.rownames=FALSE)
   cat(paste0("<div style='width:800; overflow:auto; border-width: 2'>", html, "</div>"))
 }
- X = data.frame("No. of Models"=c(1,2,3,4),
+ X = data.frame("No. of Models"=c("1","2","3","4"),
 "Lambda"= c("0.007","0.06","0.12","0.33"),
 "Public Score" = c("0.796861","0.800785","0.805950","0.780393"),
 "Private Score" = c("0.797092","0.801291","0.808719","0.783668"))
