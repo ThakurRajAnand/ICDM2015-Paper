@@ -98,11 +98,7 @@ Using Exploratory Data Analysis, we found device-cookie pairs follow poisson dis
 ## Feature Engineering
 ```{r echo = F, results = 'asis',message=F, warning=F}
 require(rCharts)
-haireye = as.data.frame(HairEyeColor)
-n1 <- nPlot(Freq ~ Hair, group = 'Eye', type = 'multiBarChart',
-  data = subset(haireye, Sex == 'Male')
-)
-n1$print('chart1')
+require(xtable)
 ```
 
 ---
