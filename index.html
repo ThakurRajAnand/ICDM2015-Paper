@@ -250,7 +250,16 @@
     <h2>Conclusion</h2>
   </hgroup>
   <article data-timings="">
-    
+    <p>We did intensive feature engineering and analysis for naive similarity features, latent features and transformation of categorical variables to their empirical analogues.</p>
+
+<p>Ensemble of 3 GBM gave us 0.809 (post deadline) on the leaderboard. Our strategy to ensemble using Poisson distribution seems to be the right choice to achieve high F-score for this problem. </p>
+
+<p>Our score 0.809 was achieved using \(\lambda = 0.12\), while we observed that F-score should improve till \(\lambda \leq 0.26\). We think by including more models in the ensemble we can improve the F-score significantly. Our strategy also gives flexibility to work on very large data set as it may not be feasible to do K-Fold cross validation for such large data sets. </p>
+
+<p>We think our strategy of using Poisson distribution can be used as generic method in settings where one user has to be connected to multiple items e.g recommender systems.</p>
+
+<p>Our strategy remains the area of our research, which we will continue to explore and publish the result on other similar data sets.</p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
