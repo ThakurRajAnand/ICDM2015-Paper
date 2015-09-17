@@ -96,6 +96,7 @@ Using Exploratory Data Analysis, we found device-cookie pairs follow poisson dis
 ---
 
 ## Feature Engineering : Naive Similarity 
+
 ```{r echo = F, results = 'asis',message=F, warning=F}
 require(xtable)
 head.table <- function(table) {
