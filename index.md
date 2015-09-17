@@ -162,7 +162,7 @@ We primarily used FTRL to test new features and take LB feedback to decide if fe
 ---
 
 ## Ensembling Approach
-We wrote a heuristic to ensemble different XGBOOST models to make cookie - device pair distribution as close as possible to Poission with $\lambda$ <= 0.26. Results below shows that if our predicted distribution goes beyond $\lambda$ <= 0.26 then results drops dramatically.
+We wrote a heuristic to ensemble different XGBOOST models to make cookie - device pair distribution as close as possible to Poisson with $\lambda$ <= 0.26. Results below shows that if our predicted distribution goes beyond $\lambda$ <= 0.26 then F-score drops dramatically.
 
 <div style='width:800; overflow:auto; border-width: 2'><!-- html table generated in R 3.1.0 by xtable 1.7-4 package -->
 <!-- Thu Sep 17 11:13:19 2015 -->
