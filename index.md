@@ -17,11 +17,12 @@ knit        : slidify::knit2slides
 1. Introduction
 2. Objective and Evaluation
 3. Data
-4. Feature Engineering
-5. Models
-6. Ensembling Approach
-7. Conclusion
-8. References
+4. Methodology
+5. Feature Engineering
+6. Models
+7. Ensembling Approach
+8. Conclusion
+9. References
 
 ---
 
@@ -68,3 +69,41 @@ $$
 2. <B>Cookie</B> features like ID , Browser Version , Country etc. <font color="red">[6 Anonymous features]</font>
 3. <B>IP</B> features for <B>Device/Cookie</B> like Freq count etc. <font color="red">[5 Anonymous count features]</font>
 4. <B>Property</B> features for <B>IP</B> like Total Freq etc. <font color="red">[3 Anonymous features]</font>
+
+<B>Drawbridge</B> assigns unique <B>Drawbridge Handle</B> to Device-Cookie pairs which belong to same user. 180K  <B>Device/Cookie</B> pairs were provided with known <B> Drawbridge Handles</B>.
+
+---
+
+## Methodolgy
+Something
+
+---
+
+## Feature Engineering
+
+---
+
+## Models
+
+---
+
+## Ensembling Approach
+
+---
+
+## Conclusion
+
+---
+
+## References
+H.~Brendan McMahan, Gary Holt, D.~Sculley, Michael Young. Ad Click Prediction: a View from the Trenches. In KDD, Chicago, Illinois, USA, August 2013 <a href="url">http://www.eecs.tufts.edu/\~dsculley/papers/ad-click-prediction.pdf</a>
+
+H.~Brendan Mcmahon. Follow-the-Regularized-Leader and Mirror Descent. <a href="url">http://jmlr.org/proceedings/papers/v15/mcmahan11b/mcmahan11b.pdf</a>
+
+Jerome H.~Friedman. Greedy Function Approximation: A Gradient Boosting Machine. <a href="url">https://statweb.stanford.edu/\~jhf/ftp/trebst.pdf</a>
+
+T.~Hastie, R.~Tibshirani, J.~H.~Friedman. The Elements of Statistical Learning. New York:Springer. ISBN 0-387-84857-6
+
+Jerome H.~Friedman. Stochastic Gradient Boosting. <a href="url">https://statweb.stanford.edu/\~jhf/ftp/stobst.pdf</a>
+
+J~Tang, H.~Liu. Unsupervised feature selection for linked social media data. In KDD, 2012.
