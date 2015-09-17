@@ -132,7 +132,32 @@ Using Exploratory Data Analysis, we found device-cookie pairs follow poisson dis
 
 --- 
 
-## Models
+## Models - FTRL and XGBOOST
+
+We used following 2 models:
+
+1. <b>FTRL</b> : FTRL is a online version of regularized logistic regression and gives lot of flexibility to run the models on big data sets quickly 
+
+2. <b>XGBOOST</b> : XGBOOST is a library developed by DMLC and currently considered as the most powerful Gradient Boosting library (Linear & Tree)
+
+We primarily used FTRL to test new features and take LB feedback to decide if feature is adding value or not.
+
+---
+
+## Models - Cross Validation Score
+<B>3-Fold-CV-Score for XGBOOST </B>
+<div style='width:800; overflow:auto; border-width: 2'><!-- html table generated in R 3.1.0 by xtable 1.7-4 package -->
+<!-- Thu Sep 17 10:18:25 2015 -->
+<table border=1>
+<tr> <th> Probability </th> <th> Lambda </th> <th> X3.Fold.CV </th>  </tr>
+  <tr> <td align="right"> 0.99 </td> <td align="right"> 0.01 </td> <td align="right"> 0.79 </td> </tr>
+  <tr> <td align="right"> 0.99 </td> <td align="right"> 0.01 </td> <td align="right"> 0.79 </td> </tr>
+  <tr> <td align="right"> 0.98 </td> <td align="right"> 0.05 </td> <td align="right"> 0.79 </td> </tr>
+  <tr> <td align="right"> 0.98 </td> <td align="right"> 0.09 </td> <td align="right"> 0.77 </td> </tr>
+  <tr> <td align="right"> 975.00 </td> <td align="right"> 0.12 </td> <td align="right"> 0.77 </td> </tr>
+   </table>
+</div>
+
 
 ---
 

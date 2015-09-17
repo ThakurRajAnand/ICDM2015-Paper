@@ -227,15 +227,46 @@
 
 <slide class="" id="slide-11" style="background:;">
   <hgroup>
-    <h2>Models</h2>
+    <h2>Models - FTRL and XGBOOST</h2>
   </hgroup>
   <article data-timings="">
-    
+    <p>We used following 2 models:</p>
+
+<ol>
+<li><p><b>FTRL</b> : FTRL is a online version of regularized logistic regression and gives lot of flexibility to run the models on big data sets quickly </p></li>
+<li><p><b>XGBOOST</b> : XGBOOST is a library developed by DMLC and currently considered as the most powerful Gradient Boosting library (Linear &amp; Tree)</p></li>
+</ol>
+
+<p>We primarily used FTRL to test new features and take LB feedback to decide if feature is adding value or not.</p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>Models - Cross Validation Score</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><B>3-Fold-CV-Score for XGBOOST </B></p>
+
+<div style='width:800; overflow:auto; border-width: 2'><!-- html table generated in R 3.1.0 by xtable 1.7-4 package -->
+<!-- Thu Sep 17 10:18:25 2015 -->
+<table border=1>
+<tr> <th> Probability </th> <th> Lambda </th> <th> X3.Fold.CV </th>  </tr>
+  <tr> <td align="right"> 0.99 </td> <td align="right"> 0.01 </td> <td align="right"> 0.79 </td> </tr>
+  <tr> <td align="right"> 0.99 </td> <td align="right"> 0.01 </td> <td align="right"> 0.79 </td> </tr>
+  <tr> <td align="right"> 0.98 </td> <td align="right"> 0.05 </td> <td align="right"> 0.79 </td> </tr>
+  <tr> <td align="right"> 0.98 </td> <td align="right"> 0.09 </td> <td align="right"> 0.77 </td> </tr>
+  <tr> <td align="right"> 975.00 </td> <td align="right"> 0.12 </td> <td align="right"> 0.77 </td> </tr>
+   </table>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
   <hgroup>
     <h2>Ensembling Approach</h2>
   </hgroup>
@@ -245,7 +276,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-13" style="background:;">
+<slide class="" id="slide-14" style="background:;">
   <hgroup>
     <h2>Conclusion</h2>
   </hgroup>
@@ -264,7 +295,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-14" style="background:;">
+<slide class="" id="slide-15" style="background:;">
   <hgroup>
     <h2>References</h2>
   </hgroup>
@@ -351,26 +382,32 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=11 title='Models'>
+        data-slide=11 title='Models - FTRL and XGBOOST'>
          11
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=12 title='Ensembling Approach'>
+        data-slide=12 title='Models - Cross Validation Score'>
          12
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=13 title='Conclusion'>
+        data-slide=13 title='Ensembling Approach'>
          13
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=14 title='References'>
+        data-slide=14 title='Conclusion'>
          14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='References'>
+         15
       </a>
     </li>
   </ul>
