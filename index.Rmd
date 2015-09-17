@@ -151,9 +151,9 @@ head.table <- function(table) {
   html <- print(xtable(table), type="html", print.results=FALSE,include.rownames=FALSE)
   cat(paste0("<div style='width:800; overflow:auto; border-width: 2'>", html, "</div>"))
 }
-X = data.frame("Probability" = c(0.99,0.989,0.985,0.98,975),
-"Lambda" = c(0.006,0.007,0.05,0.09,0.12),
-"3-Fold-CV"=c(0.7944500,0.7915672,0.7895898,0.7661763,0.7706141))
+X = data.frame("Probability" = c("0.99","0.989","0.985","0.98","0.975"),
+"Lambda" = c("0.006","0.007","0.05","0.09","0.12"),
+"3-Fold-CV"=c("0.7944500","0.7915672","0.7895898","0.7661763","0.7706141"))
 head.table(X)
 ```
 
@@ -161,6 +161,20 @@ head.table(X)
 ---
 
 ## Ensembling Approach
+We wrote a heuristic to ensemble different XGBOOST models to make cookie - device pair distribution as close as possible to Poission with $\lambda$ <= 0.26.
+
+```{r echo = F, results = 'asis',message=F, warning=F}
+require(xtable)
+head.table <- function(table) {
+  html <- print(xtable(table), type="html", print.results=FALSE,include.rownames=FALSE)
+  cat(paste0("<div style='width:800; overflow:auto; border-width: 2'>", html, "</div>"))
+}
+ X = data.frame("No. of Models"=c(1,2,3,4),
+"Lambda"= c("0.007","0.06","0.12","0.33"),
+"Public Score" = c("0.796861","0.800785","0.805950","0.780393"),
+"Private Score" = c("0.797092","0.801291","0.808719","0.783668"))
+head.table(X)
+```
 
 ---
 
